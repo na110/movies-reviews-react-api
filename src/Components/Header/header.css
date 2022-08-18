@@ -1,0 +1,14 @@
+/* S T A R T    H E A D E R    S T Y L E */
+header {
+  position: relative;
+  height: 70vh;
+  background-image: url("../../assets/images/bg-header.webp");
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.slider-header .slick-slide {
+  max-width: 200px !important;
+}
+/* E N D    H E A D E R    S T Y L E */

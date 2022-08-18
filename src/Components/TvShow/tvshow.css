@@ -1,0 +1,66 @@
+/* S T A R T    T V    S H OW    S T Y L E */
+.tv-show .item {
+  box-shadow: 0px 12px 20px 0px rgba(255, 255, 255, 0.13),
+    0px 2px 4px 0px rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 12px 20px 0px rgba(255, 255, 255, 0.13),
+    0px 2px 4px 0px rgba(255, 255, 255, 0.12);
+}
+
+.tv-show .box-img {
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #fff;
+}
+
+.tv-show .box-img img {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.tv-show .box-img:hover img {
+  transform: scale(1.2) rotate(5deg);
+  -webkit-transform: scale(1.2) rotate(5deg);
+  -moz-transform: scale(1.2) rotate(5deg);
+  -ms-transform: scale(1.2) rotate(5deg);
+  -o-transform: scale(1.2) rotate(5deg);
+  transform-origin: center;
+}
+
+.tv-show .box-img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255 255 255 / 20%);
+  z-index: 100;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.tv-show .item:hover .box-img::after {
+  animation: flshing 0.7s;
+  -webkit-animation: flshing 0.7s;
+}
+
+@keyframes flshing {
+  0%,
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+/* E N D    T V    S H OW    S T Y L E */
